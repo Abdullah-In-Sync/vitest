@@ -27,3 +27,6 @@ jobs:
 
             - name: Upload test results (optional)
               uses: actions/upload-artifact@v3  # Uploads test results for viewing
+              with:
+                name: test-results
+                path: .vitest  # Adjust the path if your test results are stored elsewhere
